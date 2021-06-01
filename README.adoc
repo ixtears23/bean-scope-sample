@@ -23,8 +23,9 @@ BeanScopeSingletonController < PrototypeComponent 주입
 * [GET]http://localhost/bean/scope/singleton/prototype/minus
 * [GET]http://localhost/bean/scope/singleton/prototype/print
 
-.참고
+
 =============
+.참고
 주입된 prototype Bean 호출 시 주입 받은 Bean 이 Singleton 인 경우 +
 singleton Bean 을 호출한 것 과 같이 동작함. +
 이유는 singleton Bean 에 prototype Bean 주입 시 처음 Bean 을 생성할 때 한번만 주입하기 떄문 +
