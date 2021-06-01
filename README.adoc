@@ -4,8 +4,12 @@
 Spring Bean Scope 동작 알아보기
 
 
-==== singleton 확인방법
-1. server 구동
+=== 동작확인하기
+
+
+
+==== 1. singleton Bean 에 singleton Bean 주입
+
 2. singleton 확인
 * [GET]http://localhost/bean/scope/plus
 * [GET]http://localhost/bean/scope/minus
@@ -14,3 +18,17 @@ Spring Bean Scope 동작 알아보기
 SingletonComponent의 인스턴스 변수 number가 어떻게 변하는지 terminal 에서 확인할 수 있다.
 
 
+==== 2. singleton Bean 에 prototype Bean 주입
+1. server 구동
+2. singleton 확인
+* [GET]http://localhost/bean/scope/plus
+* [GET]http://localhost/bean/scope/minus
+* [GET]http://localhost/bean/scope/print
+
+
+==== 3. prototype Bean 에 prototype Bean 주입
+1. server 구동
+2. singleton 확인
+* [GET]http://localhost/bean/scope/plus
+* [GET]http://localhost/bean/scope/minus
+* [GET]http://localhost/bean/scope/print
